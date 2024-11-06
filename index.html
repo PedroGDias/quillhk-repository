@@ -10,10 +10,23 @@
     <div class="container">
         <img src="https://github.com/PedroGDias/quillhk-repository/raw/main/FullLogo_Transparent_NoBuffer%20(3).png" alt="Quill HK Solutions Logo" class="logo">
         <h1>How can we help?</h1>
-
-        <!-- Embed chatbot scripts -->
-        <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
-        <script src="https://files.bpcontent.cloud/2024/10/25/10/20241025101528-2DAHAWHK.js"></script>
     </div>
+     <!-- Embed chatbot scripts -->
+    <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+    <script src="https://files.bpcontent.cloud/2024/10/25/10/20241025101528-2DAHAWHK.js"></script>
+    <script>
+        // Wait for the iframe to load and adjust its position
+        window.addEventListener('load', function() {
+            const iframe = document.querySelector('iframe.bpFab');
+            if (iframe) {
+                iframe.style.position = 'absolute';
+                iframe.style.top = '200px';  // Adjust the distance below your <h1> tag
+                iframe.style.left = '50%';
+                iframe.style.transform = 'translateX(-50%)';
+                iframe.style.width = '100%';
+                iframe.style.maxWidth = '600px';  // Optional: control the width
+            }
+        });
+    </script>
 </body>
 </html>
