@@ -38,12 +38,12 @@ h1 {
     margin: 0 auto;
 }
 
-/* Custom CSS to center the chatbot widget */
-#bp-webchat {
-    position: absolute !important; /* Override default fixed position */
-    top: 200px; /* Adjust the space from the top of the page */
-    left: 50%;
-    transform: translateX(-50%); /* Centers the widget horizontally */
+/* Override the position of the chatbot iframe */
+iframe.bpFab {
+    position: absolute !important;  /* Override default position */
+    top: 200px !important;  /* Adjust this to place below your <h1> */
+    left: 50% !important;    /* Center horizontally */
+    transform: translateX(-50%) !important; /* Precisely center it */
     width: 100%;
-    max-width: 600px; /* Optional: control the max width */
+    max-width: 600px;  /* Optional: control the max width */
 }
