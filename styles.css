@@ -20,8 +20,9 @@ body {
 }
 
 .logo {
-    max-width: 550px;
+    width: 550px;
     margin-bottom: 20px;
+    margin-top: 40px;
 }
 
 h1 {
