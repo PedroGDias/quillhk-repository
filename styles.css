@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    color: #4A8CF8; /* Adjusted to match your text color */
+    text-align: center;
+}
+
+.container {
+    text-align: center;
+}
+
+.logo {
+    max-width: 150px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.chatbot {
+    border: 1px dashed #bbb;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    margin: 0 auto;
+}
