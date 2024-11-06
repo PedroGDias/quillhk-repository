@@ -38,12 +38,22 @@ h1 {
     margin: 0 auto;
 }
 
-/* Override the position of the chatbot iframe */
-iframe.bpFab {
-    position: absolute !important;  /* Override default position */
-    top: 200px !important;  /* Adjust this to place below your <h1> */
-    left: 50% !important;    /* Center horizontally */
+/* Aggressively override iframe and chatbot container positioning */
+iframe.bpFab, iframe[name="fab"] {
+    position: absolute !important;  /* Override any fixed positioning */
+    top: 200px !important;          /* Adjust this to place below your <h1> tag */
+    left: 50% !important;           /* Center horizontally */
     transform: translateX(-50%) !important; /* Precisely center it */
-    width: 100%;
-    max-width: 600px;  /* Optional: control the max width */
+    width: 100% !important;         /* Ensure full width */
+    max-width: 600px !important;    /* Optional: control the width */
+}
+
+/* Also, target the parent container, sometimes needed for strict control */
+div.bp-webchat {
+    position: absolute !important;  /* Override positioning */
+    top: 200px !important;          /* Ensure chatbot container is positioned */
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 100% !important;
+    max-width: 600px !important;
 }
