@@ -39,33 +39,3 @@ h1 {
     text-align: center;  /* Center the content inside the container */
     margin-top: 50px;    /* Adjust space from top, if needed */
 }
-
-/* Override iframe position to ensure it’s centered below the header */
-iframe.bpFab, iframe[name="fab"] {
-    position: absolute !important;  /* Override any fixed positioning */
-    top: 250px !important;          /* Adjust this to place below your <h1> tag */
-    left: 50% !important;           /* Center horizontally */
-    transform: translateX(-50%) !important; /* Precisely center it */
-    width: 100% !important;         /* Ensure full width */
-    max-width: 600px !important;    /* Optional: control the width */
-}
-
-/* Targeting the parent div if needed */
-div.bp-webchat {
-    position: absolute !important;  /* Override positioning */
-    top: 250px !important;          /* Ensure chatbot container is positioned */
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 100% !important;
-    max-width: 600px !important;
-}
-
-/* Override the chat window that opens from the iframe */
-iframe.bpFab {
-    z-index: 9999 !important; /* Ensure iframe is above other content */
-}
-
-/* Optionally, if you want the chatbox to also appear above other elements */
-iframe.bp-webchat {
-    z-index: 10000 !important; /* Ensure chatbot content is layered above other elements */
-}
