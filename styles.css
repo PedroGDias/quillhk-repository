@@ -1,41 +1,78 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* styles.css */
+:root {
+    --brand-color: #FFBE58;
 }
 
 body {
-    background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
+    background-color: white;
+}
+
+.container {
+    width: 100%;
+    max-width: 28rem; /* ~448px */
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    font-family: Arial, sans-serif;
-    color: #5474fc; /* Adjusted to match your text color */
-    text-align: center;
+}
+
+.logo-container {
+    margin-bottom: 3rem;
 }
 
 .logo {
-    width: 450px;
-    margin-bottom: 20px;
-    margin-top: 20px;
+    height: 5rem; /* 80px */
+    object-fit: contain;
 }
 
-h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
+.heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--brand-color);
+    margin-bottom: 3rem;
+    text-align: center;
 }
 
-.chatbot {
-    border: 1px dashed #bbb;
-    padding: 20px;
-    width: 80%;
-    max-width: 900px;
-    margin: 0 auto;
+.form-group {
+    width: 100%;
+    margin-bottom: 1.5rem;
 }
 
-/* Ensure the container is centered */
-.container {
-    text-align: center;  /* Center the content inside the container */
-    margin-top: 50px;    /* Adjust space from top, if needed */
+input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #D1D5DB;
+    border-radius: 0.5rem;
+    font-family: 'Archivo', sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+    box-sizing: border-box;
+}
+
+input:focus {
+    outline: none;
+    border-color: var(--brand-color);
+    box-shadow: 0 0 0 3px rgba(255, 190, 88, 0.2);
+}
+
+button {
+    background-color: var(--brand-color);
+    color: white;
+    border: none;
+    padding: 0.5rem 2rem;
+    border-radius: 0.5rem;
+    font-family: 'Archivo', sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.9;
 }
